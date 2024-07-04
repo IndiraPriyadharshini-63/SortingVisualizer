@@ -5,7 +5,7 @@ import useSound from "use-sound";
 import Sound1 from "../sounds/sound1.wav";
 import Sound2 from "../sounds/sound2.wav";
 
-const ARRAY_SIZE = 100;
+const ARRAY_SIZE = 90;
 function SortingVisualizer() {
   const [primaryArray, setPrimaryArray] = useState([]);
   const [animationSpeed, setAnimationSpeed] = useState(40);
@@ -17,6 +17,7 @@ function SortingVisualizer() {
 
   useEffect(() => {
     randomizeArray();
+    // eslint-disable-next-line
   }, []);
 
   function randomizeArray() {
